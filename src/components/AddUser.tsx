@@ -14,7 +14,8 @@ const AddUser = () => {
     setEmail(e);
   };
 
-  const handleClick = async () => {
+  const handleClick = async (e: ChangeEvent<HTMLFormElement>) => {
+    e.preventDefault();
     await fetch(API_URL, {
       method: "POST",
       headers: {
