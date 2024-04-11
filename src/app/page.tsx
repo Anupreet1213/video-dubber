@@ -16,7 +16,7 @@ export default async function Home() {
   const usersData = await getData();
   return (
     <main className="bg-[#242424] text-[#c9c9c9] pt-16 pb-8 flex justify-center">
-      <div className="w-[60vw]">
+      <div className="w-[90vw] md:w-[60vw]">
         <AddUser />
         <TableSelection usersData={usersData} />
       </div>
