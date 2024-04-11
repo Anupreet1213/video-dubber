@@ -1,21 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Before you dive in, ensure you have the following prerequisites:
 
-```bash
+Node.js and npm (or yarn): Download and install them from https://nodejs.org/en.
+
+Let's Set Up Your Development Environment:
+
+### Clone the Repository:
+
+Open your terminal and use the git clone command to clone your project from your Git repository:
+
+```
+git clone https://github.com/Anupreet1213/video-dubber.git
+```
+
+### Install Dependencies:
+
+Navigate to your project directory:
+
+```
+cd video-dubber
+```
+Then, install all the project dependencies using npm or yarn:
+```
+npm install
+# or
+yarn install
+```
+
+### Start the Development Server:
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+This command will start a local development server running on http://localhost:3000 by default. Open your web browser and navigate to this address to access your application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Additional Resources:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js Documentation: Dive deeper with the official Next.js documentation: https://nextjs.org/docs/getting-started/installation
+Create Next App: Learn more about the create-next-app tool used to bootstrap this project: https://github.com/zeit/next.js/tree/canary/packages/create-next-app
