@@ -39,6 +39,8 @@ export function TableSelection({ usersData }: TableProps) {
 
   const rows = usersData?.map((item) => {
     const selected = selection.includes(item.id);
+    const emailUsername =
+      typeof item.email === "string" ? item.email.split("@")[0] : "Unknown";
     return (
       <Table.Tr
         key={item.id}
@@ -54,7 +56,7 @@ export function TableSelection({ usersData }: TableProps) {
           <Group gap="sm">
             <Avatar size={26} src={item.avatar} radius={26} />
             <Text size="sm" fw={500}>
-              {item.email.split("@")[0]}
+              {emailUsername}
             </Text>
           </Group>
         </Table.Td>
